@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jaasiel Antunes" />
+
+    <link rel="icon" type="image/x-icon" href="images/icone.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Painel - Administração</title>
+  </head>
+  <body>
+      <div class="container">
+        <aside>
+          <div class="top">
+            <div class="logo">
+              <img src="images/logo.png" alt="logo">
+              <h2>MAS<span class="perigo">TER</span></h2>
+            </div>
+            <div class="fechar" id="fechar-btn">
+              <span class="material-icons-sharp">close</span>
+            </div>
+          </div>
+
+          <!-- inicio barra lateral -->
+          <div class="barra-lateral">
+            <a href="#" class="active">
+              <span class="material-icons-sharp">grid_view</span>
+              <h3>Painel De Controle</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp"> person_outline</span>
+              <h3>Clientes</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">receipt_long</span>
+              <h3>Pedidos</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">insights</span>
+              <h3>Análises</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">mail_outline</span>
+              <h3>Mensagens</h3>
+              <span class="cont-mensagem">17</span>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">inventory</span>
+              <h3>Produtos</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">report_gmailerrorred</span>
+              <h3>Relatórios</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">settings</span>
+              <h3>Configurações</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">add</span>
+              <h3>Adc Produto</h3>
+            </a>
+
+            <a href="#">
+              <span class="material-icons-sharp">logout</span>
+              <h3>Sair</h3>
+            </a>
+          </div>
+          <!-- fim barra lateral -->
+        </aside>
+
+        <!-- inicio principal -->
+      <main>
+        <h1>Painel De Controle</h1>
+
+          <div class="data">
+            <input type="date">
+          </div>
+
+          <!-- inicio percepções -->
+          <div class="percepcoes">
+            <!-- inicio vendas -->
+            <div class="vendas">
+              <span class="material-icons-sharp">analytics</span>
+              <div class="meio">
+                <div class="esquerda">
+                  <h3>Vendas Totais</h3>
+                  <h1>R$25,22</h1>
+                </div>
+                <div class="progresso">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="numero">
+                      <p>80%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="texto-mutado">Últimas 24 horas</small>
+            </div>
+            <!-- fim vendas -->
+
+            <!-- inicio despesas -->
+            <div class="despesas">
+              <span class="material-icons-sharp">bar_chart</span>
+              <div class="meio">
+                <div class="esquerda">
+                  <h3>Despesas Totais</h3>
+                  <h1>R$13,33</h1>
+                </div>
+                <div class="progresso">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="numero">
+                      <p>62%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="texto-mutado">Últimas 24 horas</small>
+            </div>
+            <!-- fim despesas -->
+
+            <!-- inicio renda -->
+            <div class="renda">
+              <span class="material-icons-sharp">stacked_line_chart</span>
+              <div class="meio">
+                <div class="esquerda">
+                  <h3>Renda Total</h3>
+                  <h1>R$11,62</h1>
+                </div>
+                <div class="progresso">
+                  <svg>
+                    <circle cx="38" cy="38" r="36"></circle>
+                  </svg>
+                  <div class="numero">
+                      <p>44%</p>
+                  </div>
+                </div>
+              </div>
+              <small class="texto-mutado">Últimas 24 horas</small>
+            </div>
+            <!-- fim renda -->
+          </div>
+          <!-- fim percepções -->
+
+          <!-- inicio pedidos recentes -->
+          <div class="pedidos-recentes">
+            <h2>Pedidos Recentes</h2>
+            <!-- inicio tabela -->
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome Do Produto</th>
+                  <th>Número Do Produto</th>
+                  <th>Pagamento</th>
+                  <th>Envio</th>
+                </tr>
+              </thead>
+
+              <!-- inicio corpo tabela -->
+              <tbody>
+                <!-- <tr>
+                  <td>Drone Dji Phantom</td>
+                  <td>8561</td>
+                  <td>Pendente</td>
+                  <td class="warning">Pendente</td>
+                  <td class="primaria detalhes">Detalhes</td>
+                </tr>
+
+                <tr>
+                  <td>Smartphone Xiaomi Mi 11 Pro</td>
+                  <td>2104</td>
+                  <td>Pago</td>
+                  <td class="warning">Enviado</td>
+                  <td class="primaria detalhes">Detalhes</td>
+                </tr>
+
+                <tr>
+                  <td>MacBook Air Pro</td>
+                  <td>0021</td>
+                  <td>Pago</td>
+                  <td class="warning">Entregue</td>
+                  <td class="primaria detalhes">Detalhes</td>
+                </tr>
+
+                <tr>
+                  <td>TV LG 70 polegadas</td>
+                  <td>3176</td>
+                  <td>Pendente</td>
+                  <td class="warning">Pendente</td>
+                  <td class="primaria detalhes">Detalhes</td>
+                </tr>
+
+                <tr>
+                  <td>Headset Redragon</td>
+                  <td>1818</td>
+                  <td>Pendente</td>
+                  <td class="warning">Pendente</td>
+                  <td class="primaria detalhes">Detalhes</td>
+                </tr> -->
+              </tbody>
+              <!-- fim corpo tabela -->
+            </table>
+            <!-- fim tabela -->
+            <a href="#">Mostrar Todos</a>
+          </div>
+          <!-- fim pedidos recentes -->
+      </main>
+      <!-- fim principal -->
+      
+      <!-- inicio direita -->
+      <div class="direita">
+        <!-- inicio topo -->
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="tema-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+          <div class="perfil">
+            <div class="info">
+              <p>Olá, <b>Débora</b></p>
+              <small class="texto-mutado">Admin</small>
+            </div>
+            <div class="foto-perfil">
+              <img src="images/foto-perfil-admin.jpg" alt="foto-perfil" class="img-perfil">
+            </div>
+          </div>
+        </div>
+        <!-- fim topo -->
+
+        <!-- inicio atualizações recentes -->
+        <div class="atuali-recentes">
+          <h2>Atualizações Recentes</h2>
+          <!-- inicio atualizações -->
+          <div class="atualizacoes">
+            <div class="atualizacao">
+              <div class="foto-perfil">
+                <img src="images/foto-perfil2.jpg" alt="foto-perfil2" class="img-perfil">
+              </div>
+              <div class="messagem">
+                <p><b>Jaasiel Antunes</b> recebeu o seu pedido de um MacBook Air Pro.</p>
+                <small class="texto-mutado">5 minutos atrás.</small>
+              </div>
+            </div>
+
+            <div class="atualizacao">
+              <div class="foto-perfil">
+                <img src="images/foto-perfil3.jpg" alt="foto-perfil3" class="img-perfil">
+              </div>
+              <div class="messagem">
+                <p><b>Maria Luiza</b> recebeu o seu pedido de dois Xiaomi Mi 10T.</p>
+                <small class="texto-mutado">45 minutos atrás.</small>
+              </div>
+            </div>
+
+            <div class="atualizacao">
+              <div class="foto-perfil">
+                <img src="images/foto-perfil4.jpg" alt="foto-perfil4" class="img-perfil">
+              </div>
+              <div class="messagem">
+                <p><b>Kate Carvalho</b> recebeu o seu pedido de um Notebook Gamer Acer.</p>
+                <small class="texto-mutado">3 horas atrás.</small>
+              </div>
+            </div>
+
+            <div class="atualizacao">
+              <div class="foto-perfil">
+                <img src="images/foto-perfil5.jpg" alt="foto-perfil5" class="img-perfil">
+              </div>
+              <div class="messagem">
+                <p><b>Marcos Guilherme</b> recebeu o seu pedido de dois Drones Dji Phantom.</p>
+                <small class="texto-mutado">1 minutos atrás.</small>
+              </div>
+            </div>
+          </div>
+          <!-- fim atualizações -->
+        </div>
+        <!-- fim atualizações recentes -->
+
+        <!-- inicio análise vendas -->
+        <div class="analise-vendas">
+          <h2>Análise De Vendas</h2>
+          <div class="item online">
+            <div class="icone">
+              <span class="material-icons-sharp">shopping_cart</span>
+            </div>  
+            <div class="direita">
+              <div class="info">
+                <h3>PEDIDOS ONLINE</h3>
+                <small class="texto-mutado">Últimas 24 horas</small>
+              </div>
+              <h5 class="sucesso">+45%</h5>
+              <h3>3850</h3>
+            </div>
+          </div>
+
+          <div class="item offline">
+            <div class="icone">
+              <span class="material-icons-sharp">local_mall</span>
+            </div>
+            <div class="direita">
+              <div class="info">
+                <h3>PEDIDOS OFFLINE</h3>
+                <small class="texto-mutado">Últimas 24 horas</small>
+              </div>
+              <h5 class="perigo">-21%</h5>
+              <h3>1090</h3>
+            </div>
+          </div>
+
+          <div class="item clientes">
+            <div class="icone">
+              <span class="material-icons-sharp">person</span>
+            </div>
+            <div class="direita">
+              <div class="info">
+                <h3>NOVOS CLIENTES</h3>
+                <small class="texto-mutado">Últimas 24 horas</small>
+              </div>
+              <h5 class="sucesso">+32%</h5>
+              <h3>3218</h3>
+            </div>
+          </div>
+          <div class="item add-produto">
+            <div>
+              <span class="material-icons-sharp">add</span>
+              <h3>Adicionar Produto</h3>
+            </div>
+          </div>
+        </div>
+        <!-- fim análise vendas -->
+      </div>
+      <!-- fim direita -->
+    </div>
+
+    <script src="js/orders.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
